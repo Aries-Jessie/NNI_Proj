@@ -10,7 +10,7 @@
 
 此时，使用10000测试集图像测试的结果为accuracy = 55.630%
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520024519469.png" alt="image-20200520024519469" style="zoom:50%;" />
+<img src="./images/image-20200520024519469.png" alt="image-20200520024519469" style="zoom:50%;" />
 
 
 
@@ -145,7 +145,7 @@ Command reference document https://nni.readthedocs.io/en/latest/Tutorial/Nnictl.
 
 ## WebUI查看结果
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520024737042.png" alt="image-20200520024737042" style="zoom:50%;" />
+<img src="./images/image-20200520024737042.png" alt="image-20200520024737042" style="zoom:50%;" />
 
 由于在gpu上运行试验时，需要保证gpu空闲。我在训练时，实验室服务器上4块gpu有3块在使用中，所以我调整了trialConcurrency和gpuNum均为1。
 
@@ -157,23 +157,23 @@ Command reference document https://nni.readthedocs.io/en/latest/Tutorial/Nnictl.
 
 Trial jobs中可以看到每一个trial参数组合的详细信息和以及对应的log目录地址。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520025432766.png" alt="image-20200520025432766" style="zoom:50%;" />
+<img src="./images/image-20200520025432766.png" alt="image-20200520025432766" style="zoom:50%;" />
 
 
 
 Intermediate result可以看到NNI报告的中间结果。我的中间结果输出的是训练过程中的loss，这样可以清楚的看到loss的收敛速度，对调节learning rate的搜索范围由一定的帮助。鼠标放在节点上可以看到每一个Trial的详细信息。如下图：
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520025944451.png" alt="image-20200520025944451" style="zoom:50%;" />
+<img src="./images/image-20200520025944451.png" alt="image-20200520025944451" style="zoom:50%;" />
 
 
 
 Trial Duration可以看出每次实验运行的时间。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520030442076.png" alt="image-20200520030442076" style="zoom:50%;" />
+<img src="./images/image-20200520030442076.png" alt="image-20200520030442076" style="zoom:50%;" />
 
 Default metric(trial结果的不同表现状态)
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200520030623751.png" alt="image-20200520030623751" style="zoom:50%;" />
+<img src="./images/image-20200520030623751.png" alt="image-20200520030623751" style="zoom:50%;" />
 
 
 
