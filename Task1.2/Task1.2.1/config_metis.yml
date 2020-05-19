@@ -1,0 +1,22 @@
+authorName: Jessie
+experimentName: cifar10_pytorch
+trialConcurrency: 1  #trial并发数
+maxExecDuration: 3h # 一次trial所用时间*maxTrialNum
+maxTrialNum: 36 #根据search_space.json中的定义，共可以有6种超参组合
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false # true表示使用注释定义搜索空间，searchSpacePath将会无效
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: MetisTuner
+  classArgs:
+    #choice: maximize, minimize
+    #如果为'maximize'，表示Tuner会试着最大化指标。如果为'minimize'，表示Tuner的目标是将指标最小化。
+    optimize_mode: maximize
+trial:
+  command: python main.py
+  codeDir: . # 指定Trial文件的目录
+  gpuNum: 2  # 表示一次trial占用一个gpu
