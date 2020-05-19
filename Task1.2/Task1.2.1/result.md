@@ -152,7 +152,7 @@ Command reference document https://nni.readthedocs.io/en/latest/Tutorial/Nnictl.
 
 由于在gpu上运行试验时，需要保证gpu空闲。我在训练时，实验室服务器上4块gpu有3块在使用中，所以我调整了trialConcurrency和gpuNum均为1。
 
-由上面的概览图可以看出，虽然才训练了9个trial，但最高精度已经达到了64.28，大大超过了示例代码的预测结果。下面我们看一下trial的详细信息。
+由上面的概览图可以看出，测试集上的最高精度达到了64.74，大大超过了示例代码的预测结果。下面我们看一下trial的详细信息。
 
 在Hyper-parameter中筛选排名前20%的超参组合，可以直观的看到，目前表现最好的超参组合是：
 
