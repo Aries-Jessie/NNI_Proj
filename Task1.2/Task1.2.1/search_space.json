@@ -1,5 +1,6 @@
 {
+    "batch_size":{"_type":"choice", "_value":[4,8]},
     "lr":{"_type":"choice", "_value":[0.01, 0.001]},
-    "epochs": {"_type":"choice", "_value": [4,8,10,20]},
+    "epochs": {"_type":"choice", "_value": [2,4]},
     "momentum":{"_type":"choice", "_value":[0.7,0.8,0.9]}
 }
