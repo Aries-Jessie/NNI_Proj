@@ -21,6 +21,7 @@
 ## 代码及实现
 
 #### 主程序完整代码：train.py
+NOTE: 在train_optim.py程序代码中做了尝试，实现搜索不同的optimizer，包括：SGD，Adadelta，Adagrad，Adam，Adamax几个优化算法，但训练结果显示SGD算法表现最好，这里不过多介绍。
 
 ##### 1.从Tuner获取参数：`RCV_CONFIG = nni.get_next_parameter()`
 
@@ -105,7 +106,7 @@ nni.report_final_result(acc)
 
 #### 定义搜索空间：search_space.py
 
-其中，定义了batch_size,lr,epochs,optmizier四个参数的搜索范围。
+其中，定义了batch_size,lr,epochs,momentum四个参数的搜索范围。
 
 ## 实验启动
 
