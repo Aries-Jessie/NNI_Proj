@@ -9,8 +9,6 @@ import torch.optim as optim
 
 import nni 
 
-#torch.cuda.set_device(1)
-
 
 transform = transforms.Compose(
 
@@ -98,7 +96,6 @@ print('finished Training')
 # torch.save(net.state_dict(),PATH)
 # 从file中加载训练模型
 # net.load_state_dict(torch.load(PATH)) 
-
 
 #--------------- 测试过程--------------
 correct = 0
