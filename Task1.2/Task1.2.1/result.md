@@ -146,7 +146,9 @@ Command reference document https://nni.readthedocs.io/en/latest/Tutorial/Nnictl.
 
 ## WebUI查看结果
 
-<img src="./images/image-20200520024737042.png" alt="image-20200520024737042" style="zoom:50%;" />
+本次Experiment使用TPE超参搜索算法选取了24种组合（config.yml文件中设置maxTrialNum的值），以下是训练结果的overview：
+
+<img src="./images/image-20200520024737043.png" alt="image-20200520024737043" style="zoom:50%;" />
 
 由于在gpu上运行试验时，需要保证gpu空闲。我在训练时，实验室服务器上4块gpu有3块在使用中，所以我调整了trialConcurrency和gpuNum均为1。
 
