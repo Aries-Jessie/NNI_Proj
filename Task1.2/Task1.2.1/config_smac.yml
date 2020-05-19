@@ -1,8 +1,8 @@
 authorName: Jessie
 experimentName: cifar10_pytorch
-trialConcurrency: 1  #trial并发数
-maxExecDuration: 1h # 一次trial所用时间*maxTrialNum
-maxTrialNum: 12 #根据search_space.json中的定义，共可以有6种超参组合
+trialConcurrency: 2  #trial并发数
+maxExecDuration: 5h # 一次trial所用时间*maxTrialNum
+maxTrialNum: 16 #根据search_space.json中的定义，共可以有6种超参组合
 #choice: local, remote, pai
 trainingServicePlatform: local
 searchSpacePath: search_space.json
