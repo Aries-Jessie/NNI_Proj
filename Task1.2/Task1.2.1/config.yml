@@ -17,6 +17,6 @@ tuner:
     #如果为'maximize'，表示Tuner会试着最大化指标。如果为'minimize'，表示Tuner的目标是将指标最小化。
     optimize_mode: maximize
 trial:
-  command: python main.py
+  command: python3 train.py
   codeDir: . # 指定Trial文件的目录
-  gpuNum: 2  # 表示一次trial占用一个gpu
+  gpuNum: 1   # 表示一次trial占用2个gpu
