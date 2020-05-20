@@ -170,7 +170,7 @@ useAnnotation: false
 
  # 自定义tuner
 tuner:  
-	#指定自定义 Tuner 类的文件位置，NNI 需要定位到自定义的 Tuner 类，并实例化它
+#指定自定义 Tuner 类的文件位置，NNI 需要定位到自定义的 Tuner 类，并实例化它
   codeDir: .
   classFileName: autofe_tuner.py
   
@@ -300,9 +300,3 @@ Command reference document https://nni.readthedocs.io/en/latest/Tutorial/Nnictl.
 <img src="./images/image-20200521011031432.png" alt="image-20200521011031432" style="zoom:50%;" />
 
 ![image-20200521011206314](./images/image-20200521011206314.png)
-
-
-
-
-
-
