@@ -1,6 +1,6 @@
 {
-    "batch_size":{"_type":"choice", "_value":[4,8]},
-    "lr":{"_type":"choice", "_value":[0.01, 0.001]},
-    "epochs": {"_type":"choice", "_value": [2,4]},
-    "momentum":{"_type":"choice", "_value":[0.7,0.8,0.9]}
+    "batch_size":{"_type":"choice", "_value":[8,16,64,128]},
+    "lr":{"_type":"choice", "_value":[0.01,0.007, 0.001,0.03,0.014,0.01]},
+    "epochs": {"_type":"choice", "_value": [8,10,50,20]},
+    "momentum":{"_type":"choice", "_value":[0.5,0.7,0.9,0.99]}
 }
