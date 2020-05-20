@@ -79,7 +79,7 @@ git clone  https://github.com/Microsoft/nni.git
 
 以下列出二者对比：
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200508195348766.png" alt="image-20200508195348766" style="zoom:50%;" />
+<img src="./images/image-20200508195348766.png" alt="image-20200508195348766" style="zoom:50%;" />
 
 
 
@@ -258,7 +258,7 @@ Overview页：
 
 Top10 Maximal/Minimal trials对每个trial的最终试验结果进行排序，下图可以看出第2个trial的表现最好，最好的预测精度达到了99.4%，同时也可以查看该trial的参数组合和log地址。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521024312364.png" alt="image-20200521024312364" style="zoom:50%;" />
+<img src="./images/image-20200521024312364.png" alt="image-20200521024312364" style="zoom:50%;" />
 
 
 
@@ -266,11 +266,11 @@ Detail页：
 
 报告的中间结果为训练过程中的loss，可以看到图中蓝色的那条曲线（对应学习率0.0001）loss收敛没有其他几个trial的loss收敛快，其实是由于学习率设置的不好。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521030258636.png" alt="image-20200521030258636" style="zoom:50%;" />
+<img src="./images/image-20200521030258636.png" alt="image-20200521030258636" style="zoom:50%;" />
 
 Default metric:
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521024450115.png" alt="image-20200521024450115" style="zoom:50%;" />
+<img src="./images/image-20200521024450115.png" alt="image-20200521024450115" style="zoom:50%;" />
 
 
 
@@ -278,13 +278,13 @@ Hyper-parameter:超参组合，可以通过Top来筛选以便更清晰的查看�
 
 下图可以看出参数组合{"batch_size":64,"epochs":10,"lr":0.1}表现最好。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521024524027.png" alt="image-20200521024524027" style="zoom:50%;" />
+<img src="./images/image-20200521024524027.png" alt="image-20200521024524027" style="zoom:50%;" />
 
 
 
 Duration：每一个trial的训练时间
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521024558441.png" alt="image-20200521024558441" style="zoom:50%;" />
+<img src="./images/image-20200521024558441.png" alt="image-20200521024558441" style="zoom:50%;" />
 
 
 
@@ -292,4 +292,4 @@ Trial jobs --> Intermediate result
 
 Trial jobs部分可查看单个trial的中间结果。
 
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20200521024655732.png" alt="image-20200521024655732" style="zoom:50%;" />
+<img src="./images/image-20200521024655732.png" alt="image-20200521024655732" style="zoom:50%;" />
