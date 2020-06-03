@@ -19,7 +19,7 @@ if epoch==args['threshold']:
         optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9, weight_decay=5e-4)
 ```
 
-从nni报告的中间结果（测试精确度）可以看出，该部分还可以做进一步的优化，例如使用pytorch提供的学习率衰减策略进行优化。
+从nni报告的中间结果（测试精确度）可以看出，该部分还可以做进一步的优化，例如使用torch.optim.lr_scheduler接口提供的学习率调整策略进行优化。
 
 下一步将使用NAS搜索更优的网络架构模型，进一步提高测试精确度。
 
