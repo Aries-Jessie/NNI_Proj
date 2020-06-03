@@ -23,7 +23,7 @@ if epoch==args['threshold']:
 
 下一步将使用NAS搜索更优的网络架构模型，进一步提高测试精确度。
 
-【参数threshold的解释：本来代码中使用SGD和Adadelta两种优化算法进行训练，threshold值是当搜索算法搜索Adadelta作为优化算法的时候，训练前期使用Adadelta，当epoch>threshold值是optimizer转换成SGD继续训练。后来进过几次trail发现机遇Googlenet训练时全程使用SGD优化算法表现更好。】
+【参数threshold的解释：本来代码中使用SGD和Adadelta两种优化算法进行训练，threshold值是当搜索算法搜索Adadelta作为优化算法的时候，训练前期使用Adadelta，当epoch>threshold值是optimizer转换成SGD继续训练。后来经过几次trail发现基于Googlenet训练时全程使用SGD优化算法表现更好。】
 
 googlenet_V2A_SE.py文件是在googlenet网络模型的基础上添加了SE模块。
 
